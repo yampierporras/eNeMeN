@@ -4,9 +4,48 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Document</title>
+	<title>eNeMeN</title>
+	<link rel="stylesheet" href="public/css/estGenerales.css">
+	<link rel="stylesheet" href="public/css/estInicio.css">
+	<link rel="stylesheet" href="public/css/estResumir.css">
+	<link rel="stylesheet" href="public/css/estDocumentacion.css">
+	<script src="public/jquery/jquery-3.2.1.min.js"></script>
+	<script src="public/jquery/jquery-ui.js"></script>
+	<script src="public/angular/angular.min.js"></script>
+	<script src="public/angular/angular-route.min.js"></script>
+	<script src="public/angular/appAngular.js"></script>
+	<script src="public/angular/controladores/ctrlInicio.js"></script>
+	<script src="public/angular/controladores/ctrlResumir.js"></script>
+	<script src="public/angular/controladores/ctrlDocumentacion.js"></script>
+	<script src="public/angular/controladores/ctrlNavegacion.js"></script>
+	<script src="public/js/codigo.js"></script>
 </head>
 <body>
-	
+	<header>
+		<div>
+			<div><a href="">eN eM eN</a></div>
+			<nav>
+				<div></div>
+				<div>
+					<ul>
+						<li><a href=""></a>Inicio</li>
+						<li><a href=""></a>Resumir</li>
+						<li><a href=""></a>Documentación</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<div ng-view>
+		<!-- Cargador de vistas -->
+	</div>
+	<footer>
+		<div>
+			
+		</div>
+		<div>
+			
+		</div>
+	</footer>
 </body>
 </html>
