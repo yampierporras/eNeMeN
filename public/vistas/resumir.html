@@ -2,15 +2,16 @@
     <section class="resumir-codigo" id="resumir-codigo-js">
         <textarea class="codigo-area"></textarea>
         <section class="codigo-botones">
-            <button>Procesar</button>
-            <button>Guardar</button>
-            <!-- <button ng-click="intercambiar()">Cambiar</button> -->
+            <button class="boton boton-procesar">Procesar</button>
+            <button class="boton boton-guardar">Guardar</button>
+            <button ng-click="intercambiar()" class="boton boton-cambiar"><</button>
         </section>
     </section>
     <section class="resumir-resultado" id="resumir-resultado-js">
-        <div>
+        <div class="resultado-area">
             <!-- Contenido procesado -->
+            <h1>Titulo</h1>
         </div>
+        <button ng-click="intercambiar()" class="boton boton-cambiar">></button>
     </section>
-    <button ng-click="intercambiar()" class="boton-cambiar"><</button>
 </section>

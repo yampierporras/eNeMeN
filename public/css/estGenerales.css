@@ -4,7 +4,7 @@
 }
 
 html, body {
-	height: 100%;
+	/*height: 100%;*/
 	margin: 0;
 }
 
@@ -17,7 +17,7 @@ body {
 }
 
 header {
-	height: 100px;
+	height: 50px;
 }
 
 .p-cabecera {
@@ -40,7 +40,7 @@ header {
 }
 
 	.cabecera-logo > a {
-		line-height: 100px;
+		line-height: 50px;
 		text-decoration: none;
 		font-size: 1.5em;
 		color: #fff;
@@ -66,7 +66,7 @@ header {
 		position: absolute;
 		display: none;
 		left: 0;
-		top: 100px;
+		top: 50px;
 		width: 100%;
 		z-index: 20;
 	}
@@ -126,6 +126,7 @@ header {
 		.inicio-b>p {
 			margin: 0;
 			text-align: justify;
+			font-size: 0.7em;
 		}
 
 /*PARA RESUMIR.CSS*/
@@ -136,7 +137,6 @@ header {
 		position: absolute;
 		height: calc(100% - 100px);
 		width: 100%;
-		/*background-color: red;*/
 		z-index: 10;
 	}
 
@@ -144,7 +144,7 @@ header {
 			height: 80%;
 			width: 100%;
 			background: rgba(64, 46, 22, 0.20);
-			font-size: 1.5em;
+			font-size: 1em;
 			color: #fff;
 			resize: none;
 			box-shadow: 0.2em 0.2em 2em 0 #000;
@@ -178,17 +178,26 @@ header {
 	}
 
 	.boton-cambiar {
-		position: absolute;
-		right: 0;
-		bottom: 0;
-		z-index: 30;
-		background: #1062b6;
 		color: #fff;
+		background: #5bc0de;
+		border-color: #46b8da;
+		border-style: solid;
+		border-radius: 2em;
+		z-index: 30;
 		font-size: 1em;
-		border: none;
+		font-weight: bold;
 		margin: 0.5em 0.5em;
 		padding: 0.5em;
-		border-radius: 2em;
 		height: 50px;
 		width: 50px;
+	}
+
+	.boton-cambiar:focus {
+		outline: none;
+	}
+
+	.boton-cambiar:active {
+		color: #000;
+		background-color: #31b0d5;
+		border-color: #269abc;
 	}
