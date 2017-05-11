@@ -1,0 +1,3 @@
+enemenApp.controller('documentacion', function ($scope) {
+	// body...
+})

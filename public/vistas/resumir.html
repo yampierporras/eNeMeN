@@ -1,20 +1,16 @@
-<section>
-    <section>
-        <form>
-            <textarea>
-                <!-- Contenido por procesar -->
-            </textarea>
-            <section>
-                <button>Procesar</button>
-                <button>Guardar</button>
-                <button>Cambiar</button>
-            </section>
-        </form>
+<section class="p-resumir">
+    <section class="resumir-codigo" id="resumir-codigo-js">
+        <textarea class="codigo-area"></textarea>
+        <section class="codigo-botones">
+            <button>Procesar</button>
+            <button>Guardar</button>
+            <!-- <button ng-click="intercambiar()">Cambiar</button> -->
+        </section>
     </section>
-    <section>
+    <section class="resumir-resultado" id="resumir-resultado-js">
         <div>
             <!-- Contenido procesado -->
         </div>
     </section>
-    <button>Cambiar</button>
+    <button ng-click="intercambiar()" class="boton-cambiar"><</button>
 </section>

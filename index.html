@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+<!DOCTYPE <html></html>
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
+	<base href="/">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
 	<title>eNeMeN</title>
 	<link rel="stylesheet" href="public/css/estGenerales.css">
 	<link rel="stylesheet" href="public/css/estInicio.css">
@@ -20,32 +21,24 @@
 	<script src="public/angular/controladores/ctrlNavegacion.js"></script>
 	<script src="public/js/codigo.js"></script>
 </head>
-<body>
+<body ng-app="enemenApp">
 	<header>
-		<div>
-			<div><a href="">eN eM eN</a></div>
-			<nav>
-				<div></div>
-				<div>
+		<div class="p-cabecera">
+			<div class="cabecera-logo"><a href="">eN eM eN</a></div>
+			<nav class="cabecera-menu">
+				<div class="menu-toggle" id="menu-toggle"></div>
+				<div class="menu-items" id="menu-items">
 					<ul>
-						<li><a href=""></a>Inicio</li>
-						<li><a href=""></a>Resumir</li>
-						<li><a href=""></a>Documentación</li>
+						<li><a href="/">Inicio</a></li>
+						<li><a href="/resumir">Resumir</a></li>
+						<li><a href="/documentacion">Documentación</a></li>
 					</ul>
 				</div>
 			</nav>
 		</div>
 	</header>
-	<div ng-view>
+	<div ng-view class="cuerpo">
 		<!-- Cargador de vistas -->
 	</div>
-	<footer>
-		<div>
-			
-		</div>
-		<div>
-			
-		</div>
-	</footer>
 </body>
 </html>

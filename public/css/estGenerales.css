@@ -1,0 +1,194 @@
+@import url('cssVistas/inicio.css');
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	background-image: url('../imagenes/fondo-azul.png');
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+	height: 100px;
+}
+
+.p-cabecera {
+	background: rgba(0, 0, 0, 0.67);
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+}
+
+.cabecera-logo, .cabecera-menu {
+	flex: 1 1 0;
+}
+
+.cabecera-logo {
+	text-align: center;
+	height: 100%;
+	/*line-height: 50px;*/
+}
+
+	.cabecera-logo > a {
+		line-height: 100px;
+		text-decoration: none;
+		font-size: 1.5em;
+		color: #fff;
+	}
+
+.cabecera-menu {
+	height: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+	.menu-toggle {
+		background-image: url('../imagenes/toggle.png');
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+		height: 40px;
+		width: 40px;
+	}
+
+	.menu-items {
+		position: absolute;
+		display: none;
+		left: 0;
+		top: 100px;
+		width: 100%;
+		z-index: 20;
+	}
+
+	.menu-items>ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.menu-items>ul>li {
+		background-color: rgba(0, 0, 0, 0.67);
+		padding-left: 0.5em;
+		border: 0.0625em solid #fff;
+		border-style: solid hidden;
+		height: 3em;
+		line-height: 3em;
+		text-align: center;
+	}
+
+	.menu-items>ul>li>a{
+		text-decoration: none;
+		color: #fff;
+		display: block;
+	}
+
+/*CUERPO*/
+.cuerpo {
+	height: calc(100% - 100px);
+}
+
+/*PARA INICIO.CSS*/
+.p-inicio {
+	height: 100%;
+}
+	.inicio-a {
+		color: white;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		width: 100%;
+		text-align: center;
+	}
+
+		.inicio-a > span {
+			background: rgba(0, 0, 0, 0.7);
+			padding: 2em;
+			box-shadow: 0em 0em 5em 1em #000;
+		}
+
+	.inicio-b {
+		background-color: rgba(255, 255, 255, 0.8);
+		padding: 1em;
+		position: absolute;
+		bottom: 0;
+	}
+		.inicio-b>p {
+			margin: 0;
+			text-align: justify;
+		}
+
+/*PARA RESUMIR.CSS*/
+.p-resumir {
+	height: 100%;
+}
+	.resumir-codigo {
+		position: absolute;
+		height: calc(100% - 100px);
+		width: 100%;
+		/*background-color: red;*/
+		z-index: 10;
+	}
+
+		.codigo-area {
+			height: 80%;
+			width: 100%;
+			background: rgba(64, 46, 22, 0.20);
+			font-size: 1.5em;
+			color: #fff;
+			resize: none;
+			box-shadow: 0.2em 0.2em 2em 0 #000;
+			border: none;
+			outline: none;
+			padding: 1em;
+			display: block;
+		}
+
+		.codigo-botones {
+			height: 20%;
+			width: 100%;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+			.codigo-botones > button {
+				padding: 1em;
+				font-size: 0.8em;
+				color: #fff;
+				cursor: pointer;
+			}
+
+	.resumir-resultado {
+		display: none;
+		position: absolute;
+		width: 100%;
+		height: calc(100% - 100px);
+		background-color: green;
+		z-index: 10;
+	}
+
+	.boton-cambiar {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		z-index: 30;
+		background: #1062b6;
+		color: #fff;
+		font-size: 1em;
+		border: none;
+		margin: 0.5em 0.5em;
+		padding: 0.5em;
+		border-radius: 2em;
+		height: 50px;
+		width: 50px;
+	}
