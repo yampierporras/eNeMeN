@@ -1,16 +1,16 @@
 <section class="p-resumir">
     <section class="resumir-codigo" id="resumir-codigo-js">
-        <textarea class="codigo-area"></textarea>
+        <textarea class="codigo-area" placeholder="Escribe tus anotaciones aqui" spellcheck="false" ng-model="resumen.textRes"> </textarea>
         <section class="codigo-botones">
-            <button class="boton boton-procesar">Procesar</button>
-            <button class="boton boton-guardar">Guardar</button>
+            <button class="boton boton-procesar" ng-click="procesar()">Procesar</button>
+            <button class="boton boton-guardar" ng-click="imprimir()">Guardar</button>
             <button ng-click="intercambiar()" class="boton boton-cambiar"><</button>
         </section>
     </section>
     <section class="resumir-resultado" id="resumir-resultado-js">
-        <div class="resultado-area">
+        <div class="resultado-area" id="resultado-area-js">
             <!-- Contenido procesado -->
-            <h1>Titulo</h1>
+            <h1 style="height:50%; display: flex; justify-content: center; align-items: center; text-align: center; cursor: default">Tu documento con estilo se mostrara aqui</h1>
         </div>
         <button ng-click="intercambiar()" class="boton boton-cambiar">></button>
     </section>
